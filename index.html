@@ -8,12 +8,19 @@
     <title>PlsDONATE</title>
 </head>
 
+<script>
+    function donate() {
+        var audio = new Audio("https://www.myinstants.com//media/sounds/fortnite-default-dance-t-h-i-c-c.mp3");
+        audio.play();
+    }
+</script>
+
 <body style="background-image: url(background.jpg); background-repeat: no-repeat; background-size: cover;">
     <h1 style="text-align: center;">Spenden Sie jetzt für Obdachlose Wale!</h1>
     <center>
 
 
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <form onclick="donate()" action="https://www.paypal.com/donate" method="post" target="_blank">
             <input type="hidden" name="hosted_button_id" value="CU2KCKVPTN9BA" />
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
                 name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
